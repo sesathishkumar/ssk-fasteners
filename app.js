@@ -32,12 +32,9 @@ document.querySelector('#enquiry-form').addEventListener('submit', event => {
     document.querySelector('#requirements').reportValidity();
     return;
   }
-  const brief = ['SSK FASTENERS — ENQUIRY BRIEF', '', 'Product family: ' + data.get('product'), 'Quantity / unit: ' + (String(data.get('quantity')).trim() || 'To be confirmed'), 'Delivery location: ' + (String(data.get('location')).trim() || 'To be confirmed'), '', 'Requirements:', requirements, '', 'This is a saved brief. It has not been sent to SSK Fasteners.'].join('\r\n');
-  const url = URL.createObjectURL(new Blob([brief], {type:'text/plain;charset=utf-8'}));
-  const link = document.createElement('a');
-  link.href = url; link.download = 'SSK-Fasteners-Enquiry.txt';
-  document.body.appendChild(link); link.click(); link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-  document.querySelector('#form-status').textContent = 'Your enquiry brief is ready to save. It has not been submitted online.';
+  const brief = ['Hello SSK Fasteners,', '', 'I would like a quotation for:', 'Product: ' + data.get('product'), 'Quantity / unit: ' + (String(data.get('quantity')).trim() || 'To be confirmed'), 'Delivery location: ' + (String(data.get('location')).trim() || 'To be confirmed'), '', 'Requirements:', requirements, '', 'Please confirm availability, pricing and delivery.', '', 'Thank you.'].join('\r\n');
+  const subject = 'Fastener enquiry — ' + data.get('product');
+  window.location.href = 'mailto:sskfasteners@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(brief);
+  document.querySelector('#form-status').textContent = 'Email draft requested. Send it from your email app to submit your enquiry. If no app opens, email sskfasteners@gmail.com or call +91 8300 986 956.';
 });
 document.querySelector('#requirements').addEventListener('input', event => event.target.setCustomValidity(''));

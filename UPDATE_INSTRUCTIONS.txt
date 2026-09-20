@@ -1,0 +1,7 @@
+SSK Fasteners website content update
+
+Upload index.html and styles.css to the root of sesathishkumar/ssk-fasteners on the main branch, replacing the existing files. Keep app.js, logo.png and fasteners.jpg unchanged. Commit the upload; GitHub Pages will publish the update.
+
+Adds: six manufacturing stages, six potential industry applications, section navigation and responsive layouts. Processes are described as typical routes; no unverified in-house capability or certification is claimed.
+
+Validation: HTML IDs, navigation targets, content counts and enquiry-form presence passed. Visual browser testing was unavailable.

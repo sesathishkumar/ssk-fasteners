@@ -2,3 +2,24 @@
 
 /* SSK brand and verified contact information */
 .header,footer{background:#080b10;color:#fff}.logo-window{position:relative;display:block;width:180px;height:90px;overflow:hidden;flex-shrink:0}.logo-window img{position:absolute;width:324px;height:auto;max-width:none;left:0;top:-38px}.header{padding-top:5px;padding-bottom:5px}.nav-cta{border-color:#536b84}.header nav a:hover{color:#a4d3ff}.footer-brand{height:90px}footer>p,.footer-bottom{color:#c0ccd7}.footer-bottom{border-color:#34465a}.product-feature{background:#e9f2fb}.contact-details{font-style:normal;margin-top:30px}.contact-details>a{display:block;font-size:clamp(1rem,2vw,1.35rem);font-weight:700;margin:0 0 13px;overflow-wrap:anywhere}.contact-details p{line-height:1.7;color:#3e5265}.contact-actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:20px;font-size:14px;font-weight:700}.contact-actions a{padding-bottom:5px;border-bottom:1px solid #175b9d}.contact-details>a:hover,.contact-actions a:hover{color:#175b9d}.menu-toggle{background:#101d2c;color:#fff;border-color:#536b84}@media(max-width:650px){.logo-window{width:150px;height:75px}.logo-window img{width:270px;top:-32px}.header{min-height:90px}.header nav{padding-bottom:12px}.hero .eyebrow{font-size:10px;letter-spacing:1.4px}}
+
+/* Manufacturing and potential industry applications */
+.process-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.process-grid li{padding:30px;background:#fff;border:1px solid var(--line)}
+.step-number{display:block;color:#175b9d;font-size:14px;font-weight:700;margin-bottom:24px}
+.process-grid h3,.industry-grid h3{font-size:21px;line-height:1.25}
+.process-grid p,.industry-grid p{font-size:15px;color:var(--muted);margin:0}
+.section-note{font-size:14px;color:var(--muted);border-left:3px solid #175b9d;padding-left:18px;margin:28px 0 0}
+.industries{background:#e9f2fb}
+.industry-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #bbcddd;border-left:1px solid #bbcddd}
+.industry-grid article{padding:32px;border-right:1px solid #bbcddd;border-bottom:1px solid #bbcddd}
+.industry-tag{display:block;font-size:11px;letter-spacing:1.3px;color:#175b9d;margin-bottom:24px;font-weight:700}
+.application-note{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:30px}
+.application-note p{font-size:14px;color:#3e5265;max-width:660px;margin:0}
+.application-note .button{flex-shrink:0}
+.header nav{gap:22px}
+@media(max-width:1100px){.header nav{gap:14px;font-size:13px}.nav-cta span{margin-left:10px}.application-note{align-items:flex-start;flex-direction:column}}
+@media(min-width:651px) and (max-width:850px){.header{flex-wrap:wrap;justify-content:center}.header nav{width:100%;justify-content:center;padding-bottom:16px}}
+@media(max-width:900px){.process-grid,.industry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.process-grid,.industry-grid{grid-template-columns:1fr}.process-grid li,.industry-grid article{padding:26px}.header nav{gap:0;font-size:14px}.application-note .button{width:100%}}
+

@@ -75,3 +75,6 @@ form{border:1px solid #bdbdbd;box-shadow:8px 8px 0 #c2c2c250}
 @media(max-width:1050px){.hero-actions{gap:12px}h1{font-size:clamp(3rem,5.5vw,5.85rem)}}
 @media(max-width:650px){h1{font-size:clamp(2.65rem,11vw,4.5rem)}.hero-copy{padding:45px 7%}.hero-photo{min-height:310px;border-left:0}.hero-note{margin-top:30px}.category-strip{font-size:9px;letter-spacing:1px}.spec-table th,.spec-table td{padding:13px 10px;font-size:13px}.spec-table{min-width:490px}.hero-actions{gap:18px}.image-label{font-size:9px}.section{padding-top:58px;padding-bottom:58px}}
 @media(prefers-reduced-motion:reduce){.button,.industry-grid article{transition:none}.button:hover{transform:none}}
+
+/* Preserve the original blue accents in the brand logo. */
+.logo-window img{filter:none}

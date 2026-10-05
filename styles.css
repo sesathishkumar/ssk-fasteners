@@ -35,7 +35,7 @@ body{background:#efefef}
 h1{font-size:clamp(3.4rem,5.65vw,5.85rem);letter-spacing:-.055em}
 h1 em{color:#d7d7d7}
 .intro{max-width:440px;color:#d2d2d2}
-.hero-photo img{filter:grayscale(1) contrast(1.08);object-position:center}
+.hero-photo img{filter:grayscale(.45) contrast(1.18) brightness(.82) sepia(.16) hue-rotate(155deg) saturate(1.65);object-position:center}
 .hero-photo{border-left:1px solid #777777}
 .hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
 .text-link{font-size:14px;font-weight:700;border-bottom:1px solid #979797;padding:10px 0}
@@ -162,3 +162,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,t
 .trust-row>div{border-top-color:#5C7384}
 .trust-row strong{color:#FFFFFF}
 .trust-row span{color:#B8C9D5}
+
+
+/* Steel-blue / graphite treatment for hero fastener photography */
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,31,45,.18),rgba(28,92,128,.24) 48%,rgba(20,25,30,.28));mix-blend-mode:color;pointer-events:none;z-index:1}
+.hero-photo .image-label{z-index:2}

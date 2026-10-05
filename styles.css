@@ -78,3 +78,20 @@ form{border:1px solid #bdbdbd;box-shadow:8px 8px 0 #c2c2c250}
 
 /* Preserve the original blue accents in the brand logo. */
 .logo-window img{filter:none}
+
+
+/* Lead-generation improvements */
+.trust-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:34px}
+.trust-row>div{border-top:1px solid #666;padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.trust-row strong{font-size:17px;color:#fff}
+.trust-row span{font-size:11px;line-height:1.4;letter-spacing:.6px;color:#bcbcbc;text-transform:uppercase}
+#why-ssk .principles h3{margin-bottom:8px}
+#process .process-grid li{min-height:210px}
+#enquiry .contact-actions a:first-child{font-weight:800}
+#enquiry form .button{width:100%}
+@media(max-width:650px){
+  .trust-row{grid-template-columns:1fr;margin-top:28px}
+  .trust-row>div{display:grid;grid-template-columns:95px 1fr;align-items:start;gap:12px}
+  .trust-row strong{font-size:15px}
+  #process .process-grid li{min-height:0}
+}
